@@ -13,15 +13,15 @@
 </head>
 
 <body>
-	{{#proyectos}}
+	{{#proyecto}}
 	{{#each this}}
 	<article>
-		<h3>{{proyectos_entry.blog_title}}</h3>
-		<h3>{{{proyectos_entry.blog_text}}}</h3>
+		<h3>{{proyecto.titulo_proyecto}}</h3>
+		{{!-- <h3>{{{proyectos_entry.blog_text}}}</h3> --}}
 		<a href="/proyectos/{{page_slug}}">Read more...</a>
 	</article>
 	{{/each}}
-	{{/proyectos}}
+	{{/proyecto}}
 
 
 	<div id="fullpage">
