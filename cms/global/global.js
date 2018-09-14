@@ -1,8 +1,20 @@
 {
 	homepage_ver_proyecto_texto: 'ver proyecto',
-	instagram: 'instagram.com',
-	facebook: 'facebook.com',
-	imdb: 'imdb.com',
+	redes_sociales: [
+		{
+			nombre: 'instagram',
+			link: 'instagram.com'
+		},
+		{
+			nombre: 'facebook',
+			link: 'facebook.com'
+		},
+		{
+			nombre: 'imdb',
+			link: 'imdb.com'
+		}
+	],
+
 	$música_del_sitio_type: 'file',
 	música_del_sitio: ''
 }

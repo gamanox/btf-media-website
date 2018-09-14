@@ -19,12 +19,51 @@ body {
   background-color: #000;
 }
 
+.container-fluid {
+  padding: 0 149px;
+}
+
 #intro-section {
   .logo {
     text-align: center;
     img {
       width: 287px;
       height: 287px;
+    }
+  }
+}
+
+#social {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  ul {
+    list-style: none;
+    li a {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+}
+
+#header {
+  .logo_small_white {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    img {
+      width: 88px;
+      height: 81px;
+    }
+  }
+  .menu_btn_white {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    img {
+      width: 42px;
+      height: 27px;
     }
   }
 }
