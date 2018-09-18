@@ -1,8 +1,12 @@
 {
-  "project_name": "BTF-Media",
-  "project_slug": "sn",
-  "s3": {
-    "bucket": "enduro.sethere",
-    "region": "eu-west-1"
-  }
+	"project_name": "BTF-Media",
+	"project_slug": "sn",
+	"s3": {
+		"bucket": "enduro.sethere",
+		"region": "eu-west-1"
+	},
+	"cultures": [
+		"es",
+		"en"
+	]
 }
