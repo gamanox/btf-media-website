@@ -2,6 +2,6 @@
 /assets/vendor
 /node_modules
 /assets/css/sprites
-**/_*
+/_generated/*
 enduro_secret.json
 /juicebox

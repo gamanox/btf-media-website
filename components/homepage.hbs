@@ -1,0 +1,35 @@
+
+    <div class="section" id="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 logo">
+                    <img src="/assets/img/logo.svg" alt="">
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+    {{#proyecto}}
+   
+    {{#each this}}
+    {{!-- {{proyecto}} --}}
+    <div class="section proyecto" id="section-{{page_slug}}" style="background-image: url('{{proyecto_entry.imagen_homepage}}')">
+       
+            <div class="container-fluid">
+                <div class="logo-proyecto">
+                    <img src="{{proyecto_entry.logo_proyecto}}" alt="">
+                    
+                   
+                    <p class="descripcion">{{proyecto_entry.descripcion_corta_proyecto}}</p>
+                    <div class="cont-ir-proyecto">
+                        <img src="/assets/img/go_to_project_arrow.svg" alt="">
+                        <a href="proyectos/{{page_slug}}" class="boton-ir-a-proyecto">{{proyecto_entry.ver_proyecto_texto}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+      
+        {{/proyecto}}
+    </div>
