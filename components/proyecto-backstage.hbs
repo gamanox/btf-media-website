@@ -1,0 +1,19 @@
+<div class="section" id="proyecto-backstage">
+  <div class="container-fluid">
+        <div class="text d-flex justify-content-center">BACKSTAGE
+                <!-- <img src="/assets/img/proyecto_backstage_title.svg" alt=""> -->
+        </div>
+        <div class="col-12" >
+            {{#each imagenes_backstage}}
+                <img src="{{imagen}}" alt="">
+            {{/each}}
+
+        </div>
+        <h2 class="text d-flex justify-content-center">TAGS:</h2>
+        <div class="row text tags">
+            {{#each tags}}
+            <div class="text col-1">{{nombre_del_tag}} -</div>
+            {{/each}}
+        </div>
+    </div>
+</div>
