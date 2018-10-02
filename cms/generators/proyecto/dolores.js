@@ -30,6 +30,15 @@
 			imagen: ''
 		}
 	],
+	$premios_min: 1,
+	premios: [
+		{
+			titulo: '',
+			$logo_type: 'image',
+			logo: '',
+			url: ''
+		}
+	],
 	tags: [
 		{
 			nombre_del_tag: 'Direction'

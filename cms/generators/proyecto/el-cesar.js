@@ -28,6 +28,15 @@
 			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
 		}
 	],
+	$premios_min: 1,
+	premios: [
+		{
+			titulo: '',
+			$logo_type: 'image',
+			logo: '',
+			url: ''
+		}
+	],
 	tags: [
 		{
 			nombre_del_tag: 'Direction'

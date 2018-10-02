@@ -28,6 +28,15 @@
 			imagen: ''
 		}
 	],
+	$premios_min: 1,
+	premios: [
+		{
+			titulo: 'uno',
+			$logo_type: 'image',
+			logo: '/remote/direct_uploads/1538458946_premio.svg',
+			url: 'www.google.com'
+		}
+	],
 	tags: [
 		{
 			nombre_del_tag: ''

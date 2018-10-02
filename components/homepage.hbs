@@ -23,8 +23,8 @@
                    
                     <p class="descripcion">{{proyecto_entry.descripcion_corta_proyecto}}</p>
                     <div class="cont-ir-proyecto">
-                        {{#each premios}}
-                            <a href="{{url}}" target="_blank">
+                        {{#each proyecto_entry.premios}}
+                            <a href="{{url}}" class="premio" target="_blank">
                                 <img src="{{logo}}" alt="{{titulo}}">
                             </a>
                         {{/each}}
