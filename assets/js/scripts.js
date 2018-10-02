@@ -18,4 +18,11 @@ $(document).ready(function() {
     // fadingEffect: "slides"
   });
   // fullpage_api.setAllowScrolling(true);
+  $('.menu_btn_white').on('click', function(){
+    console.log('click');
+    
+    event.preventDefault();
+    $(this).toggleClass('active');
+    $('#menu').toggleClass('active');
+  });
 });
