@@ -2,11 +2,11 @@
 	titulo_proyecto: 'EL CÉSAR',
 	tipo_de_proyecto: 'TV-SERIES',
 	$logo_proyecto_type: 'image',
-	logo_proyecto: '',
+	logo_proyecto: '/remote/direct_uploads/1538513995_elcesar-logo.svg',
 	$imagen_homepage_type: 'image',
-	imagen_homepage: '/remote/direct_uploads/1538435633_imagen_titulo.jpeg',
+	imagen_homepage: '/remote/direct_uploads/1538514004_elcesar-homepage-80.jpg',
 	$descripcion_corta_proyecto_type: 'textarea',
-	descripcion_corta_proyecto: '',
+	descripcion_corta_proyecto: 'LA CRÓNICA DE UN PAÍS QUE VIO AL ÍDOLO CAER Y A UN HOMBRE LEVANTARSE.',
 	$video_fullscreen_type: 'file',
 	video_fullscreen: '',
 	genero_del_proyecto: 'ACCIÓN',
@@ -21,7 +21,7 @@
 	$texto_sinopsis_type: 'textarea',
 	texto_sinopsis: 'EL CÉSAR, es una serie biográfica dramatizada que sigue los pasos de la leyenda de México y del box mundial, Julio César Chávez. Durante 13 años, 11 meses y 14 días, Julio se mantuvo invicto en la cima del fervor popular y lo tuvo todo: familia, fama, dinero a manos llenas y legiones de seguidores. Sin embargo, tan alta es la cima como dura su caída. \n\nAsí, Julio accedió a un privilegiado mundo que lo llevó a relacionarse con peligrosas bandas de narcotraficantes,  a sostener amoríos con afamadas estrellas de televisión, a codearse con las más altas esferas del poder político mexicano y a envolverse en un torbellino de adicciones al alcohol y a las drogas que pondrían fin a su carrera y, por poco, hasta a su vida. \n\nRehabilitado y activo en el medio boxístico, Chávez vuelve con El César, una emocionante serie de 26 capítulos de una hora de duración que sigue la tormentosa vida dentro y fuera del ring del Gran Campeón Mexicano, mientras recorre el difícil camino que lo convertirá en leyenda.',
 	trailer_url: 'https://www.youtube.com/embed/jtn4121bN_w',
-	ver_proyecto_texto: '/proyecto/el-cesar',
+	ver_proyecto_texto: 'VER PROYECTO',
 	imagenes_backstage: [
 		{
 			$imagen_type: 'image',
@@ -31,10 +31,10 @@
 	$premios_min: 1,
 	premios: [
 		{
-			titulo: '',
+			titulo: 'mtv',
 			$logo_type: 'image',
-			logo: '',
-			url: ''
+			logo: '/remote/direct_uploads/1538514022_cesar-premio.svg',
+			url: 'www.mtvla.com'
 		}
 	],
 	tags: [
