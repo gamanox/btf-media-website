@@ -26,6 +26,22 @@
 		{
 			$imagen_type: 'image',
 			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
+		},
+		{
+			$imagen_type: 'image',
+			imagen: '/remote/direct_uploads/1538433214_elcesar3.jpg'
 		}
 	],
 	$premios_min: 1,

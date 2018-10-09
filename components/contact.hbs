@@ -1,0 +1,64 @@
+<div class="section" id="contact-section">
+    <div class="container-fluid">
+        <!-- <div class="row d-flex justify-content-center">
+        </div> -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-9">
+                <div class="row">
+                    {{#each paises}}
+                    <div class="col-3 text">
+                        <p>{{pais_name}}</p>
+                        {{#each oficinas}}
+                        <p>{{direccion}}</p>
+                        <p>{{telefono}}</p>
+                        {{/each}}
+                    </div>
+                    <div class="col-3"></div>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <img src="/assets/img/clients-title.svg" class="section-title clients-title" alt="">
+                </div>
+                <form>
+                    <div class="text form-group">
+                        <label for="exampleInputNombre">NOMBRE</label>
+                        <input type="text" class="form-control-sm back" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="Nombre">
+                    </div>
+                    <div class="text form-group">
+                        <label for="exampleInputEmail">CORREO</label>
+                        <input type="email" class="form-control-sm back" id="exampleInputEmail" placeholder="Email">
+                    </div>
+                    <div class="text form-group">
+                        <label for="exampleInputAsunto">ASUNTO</label>
+                        <input type="text" class="form-control-sm back" id="exampleInputAsunto" placeholder="Asunto">
+                    </div>
+                    <div class="text form-group-sm">
+                        <label for="exampleFormControlMensaje">MENSAJE</label>
+                        <textarea class="form-control-sm back" id="exampleFormControlAsunto" rows="3"></textarea>
+                    </div>
+                    <a class="text" href="">ENVIAR</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{#each paises}}
+<div class="section seccion-oficinas">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text">{{pais_name}}</h1>
+        </div>
+        <div class="row">
+            <div class="col-12" >
+                <div class="carousel">
+                        {{#each fotos}}
+                    <img src="{{foto}}" alt="Image 1" />
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

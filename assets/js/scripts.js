@@ -25,4 +25,20 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
   });
+//boton politicas de privacidad
+  $('.next_menu').on('click', function(){
+    console.log('click');
+    
+    event.preventDefault();
+    $('.next_menu').toggleClass('active');
+    $('#buttons').toggleClass('active');
+    $('#politicas').toggleClass('active');
+  });
+  $('.carousel').waterwheelCarousel();
+  // $('.carousel').each(function (index, element) {
+
+  //   element == this;
+  //   console.log(element);
+  //   $(element).waterwheelCarousel();
+  // });
 });
