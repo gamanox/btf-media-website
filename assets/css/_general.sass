@@ -21,6 +21,14 @@ body
 p
   color: #fff
 
+a
+  color: #fff
+  text-decoration: none
+
+a:hover
+  color: #fff
+  text-decoration: none
+
 .container-fluid
   padding: 0 149px
 
@@ -30,6 +38,8 @@ p
   left: 0
   bottom: 40px
   z-index: 2
+  .container-fluid
+    position: relative
 
   ul
     list-style: none
@@ -40,6 +50,17 @@ p
       +calibri
       font-size: 16px
       text-transform: uppercase
+  .btn-politicas
+    display: none
+    &.active
+      display: block
+    
+
+    .text
+      color: #fff
+      text-align: right
+      +calibri
+      font-size: 16px
 
 
 #header

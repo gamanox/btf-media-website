@@ -25,13 +25,14 @@ $(document).ready(function() {
     event.preventDefault();
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
+    $('.btn-politicas').toggleClass('active');
   });
 //boton politicas de privacidad
-  $('.next_menu').on('click', function(){
+  $('.btn-politicas').on('click', function(){
     console.log('click');
     
     event.preventDefault();
-    $('.next_menu').toggleClass('active');
+    $('.btn-politicas').toggleClass('active');
     $('#buttons').toggleClass('active');
     $('#politicas').toggleClass('active');
   });
