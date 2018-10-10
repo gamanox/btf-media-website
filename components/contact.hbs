@@ -4,12 +4,16 @@
         </div> -->
         <div class="mapa" style="background-image: url('{{contacto_imagen}}')">
             {{#each paises}}
-                
+
             <div class="pais drag pais-cont-{{@index}}" draggable="true">
                 <p class="t_pais">{{pais_name}}</p>
                 {{#each oficinas}}
-                <p class="t_oficina">{{direccion}}</p>
-                <p class="t_oficina text">{{telefono}}</p>
+                <p class="t_oficina">
+                    {{direccion}}
+                    <br>
+                    {{telefono}}
+                </p>
+                <p class="t_oficina text"></p>
                 {{/each}}
                 <div class="pais_arrow">
                     <img src="{{pais_arrow}}" alt="">
@@ -17,11 +21,11 @@
             </div>
             {{/each}}
         </div>
-        <div class="row d-flex justify-content-center" >
+        <div class="row d-flex justify-content-center">
             <div class="col-9">
                 <div class="row">
-                    
-                    </div>
+
+                </div>
             </div>
             <div class="col-3">
                 <div class="row">
@@ -30,7 +34,8 @@
                 <form>
                     <div class="text form-group">
                         <label for="exampleInputNombre">NOMBRE</label>
-                        <input type="text" class="form-control-sm back" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="Nombre">
+                        <input type="text" class="form-control-sm back" id="exampleInputNombre" aria-describedby="emailHelp"
+                            placeholder="Nombre">
                     </div>
                     <div class="text form-group">
                         <label for="exampleInputEmail">CORREO</label>
@@ -57,9 +62,9 @@
             <h1 class="text">{{pais_name}}</h1>
         </div>
         <div class="row">
-            <div class="col-12" >
+            <div class="col-12">
                 <div class="carousel">
-                        {{#each fotos}}
+                    {{#each fotos}}
                     <img src="{{foto}}" alt="Image 1" />
                     {{/each}}
                 </div>
