@@ -30,9 +30,9 @@ $(document).ready(function() {
 //boton politicas de privacidad
   $('.btn-politicas').on('click', function(){
     console.log('click');
-    
     event.preventDefault();
     $('.btn-politicas').toggleClass('active');
+    $('.btn-politicas-back').toggleClass('active');
     $('#buttons').toggleClass('active');
     $('#politicas').toggleClass('active');
   });
