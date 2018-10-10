@@ -1,10 +1,14 @@
 ({
 	$contacto_imagen_type: 'image',
-	contacto_imagen: '/remote/direct_uploads/1539190646_mapsWorld.jpg',
+	contacto_imagen: '/remote/direct_uploads/1539195121_mapa-contacto-80.jpg',
 	$paises_min: 1,
 	paises: [
 		{
-			pais: 'USA',
+			pais_name: 'USA',
+			$pais_image_type: 'image',
+			pais_image: '',
+			$pais_arrow_type: 'image',
+			pais_arrow: '/remote/direct_uploads/1539194242_flecha-usa.svg',
 			$oficinas_min: 1,
 			oficinas: [
 				{
@@ -29,7 +33,11 @@
 			]
 		},
 		{
-			pais: 'ESP',
+			pais_name: 'ESP',
+			$pais_image_type: 'image',
+			pais_image: '',
+			$pais_arrow_type: 'image',
+			pais_arrow: '/remote/direct_uploads/1539194261_flecha-esp.svg',
 			$oficinas_min: 1,
 			oficinas: [
 				{
@@ -58,7 +66,11 @@
 			]
 		},
 		{
-			pais: 'MEX',
+			pais_name: 'MEX',
+			$pais_image_type: 'image',
+			pais_image: '',
+			$pais_arrow_type: 'image',
+			pais_arrow: '/remote/direct_uploads/1539194270_flecha-mex.svg',
 			$oficinas_min: 1,
 			oficinas: [
 				{
@@ -87,7 +99,11 @@
 			]
 		},
 		{
-			pais: 'ARG',
+			pais_name: 'ARG',
+			$pais_image_type: 'image',
+			pais_image: '',
+			$pais_arrow_type: 'image',
+			pais_arrow: '/remote/direct_uploads/1539194281_flecha-arg.svg',
 			$oficinas_min: 1,
 			oficinas: [
 				{

@@ -2,20 +2,26 @@
     <div class="container-fluid">
         <!-- <div class="row d-flex justify-content-center">
         </div> -->
-        <div class="row d-flex justify-content-center" style="background-image: url('{{contacto_imagen}}')">
+        <div class="mapa" style="background-image: url('{{contacto_imagen}}')">
+            {{#each paises}}
+                
+            <div class="pais drag pais-cont-{{@index}}" draggable="true">
+                <p class="t_pais">{{pais_name}}</p>
+                {{#each oficinas}}
+                <p class="t_oficina">{{direccion}}</p>
+                <p class="t_oficina text">{{telefono}}</p>
+                {{/each}}
+                <div class="pais_arrow">
+                    <img src="{{pais_arrow}}" alt="">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="row d-flex justify-content-center" >
             <div class="col-9">
                 <div class="row">
-                    {{#each paises}}
-                    <div class="col-3 text">
-                        <p>{{pais_name}}</p>
-                        {{#each oficinas}}
-                        <p>{{direccion}}</p>
-                        <p>{{telefono}}</p>
-                        {{/each}}
+                    
                     </div>
-                    <div class="col-3"></div>
-                    {{/each}}
-                </div>
             </div>
             <div class="col-3">
                 <div class="row">
