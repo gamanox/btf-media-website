@@ -1,0 +1,29 @@
+
+    {{#proyecto}}
+   
+    {{#each this}}
+    {{!-- {{proyecto}} --}}
+    <div class="section proyecto" id="section-{{page_slug}}" style="background-image: url('{{proyecto_entry.imagen_homepage}}')">
+       
+            <div class="container-fluid">
+                <div class="logo-proyecto">
+                    <img src="{{proyecto_entry.logo_proyecto}}" alt="">
+                    
+                   
+                    <p class="descripcion">{{proyecto_entry.descripcion_corta_proyecto}}</p>
+                    <div class="cont-ir-proyecto">
+                        {{#each proyecto_entry.premios}}
+                            <a href="{{url}}" class="premio" target="_blank">
+                                <img src="{{logo}}" alt="{{titulo}}">
+                            </a>
+                        {{/each}}
+                        <img src="/assets/img/go_to_project_arrow.svg" alt="">
+                        <a href="proyecto/{{page_slug}}" class="boton-ir-a-proyecto">{{proyecto_entry.ver_proyecto_texto}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+      
+        {{/proyecto}}
+    </div>

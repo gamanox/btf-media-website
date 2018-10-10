@@ -1,4 +1,6 @@
 ({
+	$contacto_imagen_type: 'image',
+	contacto_imagen: '/remote/direct_uploads/1539190646_mapsWorld.jpg',
 	$paises_min: 1,
 	paises: [
 		{
