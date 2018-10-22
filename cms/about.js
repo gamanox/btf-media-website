@@ -104,7 +104,7 @@
 			nombre: 'Telefe',
 			link: 'www.telefe.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247428_telefe-client.svg'
+			logo: '/remote/direct_uploads/1540247916_telefe-client.svg'
 		},
 		{
 			nombre: 'RCN',
