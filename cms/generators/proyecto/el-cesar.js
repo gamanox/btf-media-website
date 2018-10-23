@@ -8,7 +8,7 @@
 	$descripcion_corta_proyecto_type: 'textarea',
 	descripcion_corta_proyecto: 'LA CRÓNICA DE UN PAÍS QUE VIO AL ÍDOLO CAER Y A UN HOMBRE LEVANTARSE.',
 	$video_fullscreen_type: 'file',
-	video_fullscreen: '',
+	video_fullscreen: '/remote/direct_uploads/1540257256_proyectoec.webm',
 	genero_del_proyecto: 'ACCIÓN',
 	'año': '1',
 	temporadas: '1',
