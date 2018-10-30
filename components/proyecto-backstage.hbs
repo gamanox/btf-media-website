@@ -1,13 +1,17 @@
 <div class="section" id="proyecto-backstage">
-  <div class="container-fluid">
-        <div class="text d-flex justify-content-center">BACKSTAGE
-                <!-- <img src="/assets/img/proyecto_backstage_title.svg" alt=""> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="titulo col-12">
+                <img src="/assets/img/proyecto/h1_backstage.jpg" alt="">
+            </div>
         </div>
-        <div class="col-12" >
-            <div class="carousel">
-            {{#each imagenes_backstage}}
-                <img src="{{imagen}}" alt="Image 1" />
-            {{/each}}
+        <div class="row">
+            <div class="galeria col-12" >
+                <div class="carousel">
+                {{#each imagenes_backstage}}
+                    <img src="{{imagen}}" alt="Image 1" />
+                {{/each}}
+                </div>
             </div>
         </div>
         <h2 class="text d-flex justify-content-center">TAGS:</h2>
@@ -16,5 +20,11 @@
             <div class="text col-1">{{nombre_del_tag}} -</div>
             {{/each}}
         </div>
+        <!-- <div class="row">
+        </div> -->
+    </div>
+    <div class="pie-de-pagina">
+        <p class="text1">DOLORES, LA JENN QUE YO CONOCÍ</p>
+        <p class="text2">SIGUIENTE PROYECTO</p>
     </div>
 </div>
