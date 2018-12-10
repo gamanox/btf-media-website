@@ -16,6 +16,14 @@
 	],
 	'$música_del_sitio_type': 'file',
 	'música_del_sitio': '',
-	$homepage_video_type: 'file',
-	homepage_video: '/remote/direct_uploads/1540248994_inicio.webm'
+	homepage_videos: [
+		{
+			$video_type: 'file',
+			video: '/remote/direct_uploads/1540248994_inicio.webm'
+		},
+		{
+			$video_type: 'file',
+			video: '/remote/direct_uploads/1544471487_Inicio.mp4'
+		}
+	]
 })
