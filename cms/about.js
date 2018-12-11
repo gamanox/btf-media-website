@@ -3,7 +3,7 @@
 	crew: [
 		{
 			nombre: 'Francisco Cordero',
-			titulo: 'founder & ceo',
+			titulo: '+ founder & ceo global',
 			correo: '',
 			$foto_type: 'image',
 			foto: '/remote/direct_uploads/1537909583_cordero-crew.jpg',

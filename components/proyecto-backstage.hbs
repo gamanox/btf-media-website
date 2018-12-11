@@ -2,15 +2,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="titulo col-12">
-                <img src="/assets/img/proyecto/h1_backstage.jpg" alt="">
+                {{!-- <img src="/assets/img/proyecto/h1_backstage.jpg" alt=""> --}}
             </div>
         </div>
         <div class="row">
-            <div class="galeria col-12" >
+            <div class="galeria col-12">
                 <div class="carousel">
-                {{#each imagenes_backstage}}
+                    {{#each imagenes_backstage}}
                     <img src="{{imagen}}" alt="Image 1" />
-                {{/each}}
+                    {{/each}}
                 </div>
             </div>
         </div>
