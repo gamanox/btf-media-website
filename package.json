@@ -12,7 +12,9 @@
   "dependencies": {
     "bluebird": "^3.4.7",
     "bower": "^1.7.7",
-    "enduro": "1.3.0",
+    "deep-aplus": "^1.0.4",
+    "elasticemail-webapiclient": "^2.0.8-s",
+    "enduro": "^1.4.46",
     "lodash": "^4.17.4"
   }
 }
