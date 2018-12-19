@@ -6,7 +6,7 @@
 			titulo: '+ founder & ceo global',
 			correo: '',
 			$foto_type: 'image',
-			foto: '/remote/direct_uploads/1537909583_cordero-crew.jpg',
+			foto: '/remote/direct_uploads/1545231694_Francisco.jpg',
 			$resumen_type: 'textarea',
 			resumen: ''
 		},
@@ -44,109 +44,109 @@
 			nombre: 'Amazon',
 			link: 'http://amazon.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540245889_amazon-client.svg'
+			logo: '/remote/direct_uploads/1545232319_amazon.svg'
 		},
 		{
 			nombre: 'Disney',
 			link: 'http://www.disney.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247300_disney-client.svg'
+			logo: '/remote/direct_uploads/1545232367_DISNEY.svg'
 		},
 		{
 			nombre: 'Netflix',
 			link: 'http://www.netflix.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247310_netflix-client.svg'
+			logo: '/remote/direct_uploads/1545232375_NETFLIX.svg'
 		},
 		{
 			nombre: 'Youtube',
 			link: 'www.youtube.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247328_youtube-client.svg'
+			logo: '/remote/direct_uploads/1545232380_YOUTUBE.svg'
 		},
 		{
 			nombre: 'TNT',
 			link: 'www.tnt.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247334_tnt-client.svg'
+			logo: '/remote/direct_uploads/1545232385_TNT.svg'
 		},
 		{
 			nombre: 'Telemundo',
 			link: 'www.telemundo.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247341_telemundo-client.svg'
+			logo: '/remote/direct_uploads/1545232390_TELEMUNDO.svg'
 		},
 		{
 			nombre: 'Claro',
 			link: 'www.clarovideo.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247364_claro-client.svg'
+			logo: '/remote/direct_uploads/1545232397_CLAROVIDEO.svg'
 		},
 		{
 			nombre: 'Space',
 			link: 'www.space.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247396_once-client.svg'
+			logo: '/remote/direct_uploads/1545232471_SPACE.svg'
 		},
 		{
 			nombre: 'Univision',
 			link: 'www.univision.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247411_univision-client.svg'
+			logo: '/remote/direct_uploads/1545232448_UNIVISION.svg'
 		},
 		{
 			nombre: 'El Trece',
 			link: 'www.eltrece.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247422_eltrece-client.svg'
+			logo: '/remote/direct_uploads/1545232457_ELTRECE.svg'
 		},
 		{
 			nombre: 'Telefe',
 			link: 'www.telefe.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247916_telefe-client.svg'
+			logo: '/remote/direct_uploads/1545232478_TELEFE.svg'
 		},
 		{
 			nombre: 'RCN',
 			link: 'www.rcn.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247435_rcn-client.svg'
+			logo: '/remote/direct_uploads/1545232481_RCNTELEVISION.svg'
 		},
 		{
 			nombre: 'Azteca',
 			link: 'www.tvazteca.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247443_azteca-client.svg'
+			logo: '/remote/direct_uploads/1545232501_TVAZTECA.svg'
 		},
 		{
 			nombre: 'L',
 			link: 'www.l.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540245939_ele-client.svg'
+			logo: '/remote/direct_uploads/1545232510_L.svg'
 		},
 		{
 			nombre: 'Canal Once',
 			link: 'www.oncetv.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247450_once-client.svg'
+			logo: '/remote/direct_uploads/1545232532_CANALONCE.svg'
 		},
 		{
 			nombre: 'Imagen',
 			link: 'www.grupoimagen.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247466_imagen-client.svg'
+			logo: '/remote/direct_uploads/1545232522_IMAGEN.svg'
 		},
 		{
 			nombre: 'Conaculta',
 			link: 'www.conaculta.gob',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247471_conaculta-client.svg'
+			logo: '/remote/direct_uploads/1545232354_22.svg'
 		},
 		{
 			nombre: 'Chile Vision',
 			link: 'www.chilevision.com',
 			$logo_type: 'image',
-			logo: '/remote/direct_uploads/1540247476_chile-client.svg'
+			logo: '/remote/direct_uploads/1545232535_CHILEVISION.svg'
 		}
 	]
 })

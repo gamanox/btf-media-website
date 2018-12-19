@@ -104,11 +104,36 @@ a:hover
       display: none
 
 #politicas
+  .btn-politicas
+    padding-top: 40px
+    display: block
+
+  div
+    div
+      h1
+        // text-align: center
+        +calibri
+        color: white
+        font-size: 26px
+        padding: 0
+        padding-bottom: 35px
+        padding-top: 15%
+      p
+        font-size: 14px
+        +calibri
+        text-align: justify
+      *
+
+        width: 100%
+        display: block
   .text
     font-size: 10px
-  display: none
+  pointer-events: none
+  opacity: 0
+  transition: opacity 0.4s ease-out
   &.active
-    display: block
+    pointer-events: auto
+    opacity: 1
   .btn_politicas_back
     display: none
     &.active

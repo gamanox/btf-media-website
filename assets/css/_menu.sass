@@ -10,10 +10,15 @@
     top: 0
     left: 0
     z-index: 1
-    transition:
-    display: none
+    transition: opacity 0.4s ease-out
+    pointer-events: none
+
+    // display: none
+    opacity: 0
     &.active
-        display: block
+        // display: block
+        pointer-events: auto
+        opacity: 1
     ul.menu-lista
         list-style: none
         width: 100%
@@ -53,13 +58,13 @@
                 width: 10px
                 height: 40px
                 position: absolute
-                left: -10px
+                left: 65px
                 top: -5px
             .right
                 width: 10px
                 height: 40px
                 position: absolute
-                right: -10px
+                right: 65px
                 top: -5px
             .left, .right
                 opacity: 0
