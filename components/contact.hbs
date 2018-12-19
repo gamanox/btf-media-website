@@ -34,19 +34,23 @@
                 <form>
                     <div class="text form-group">
                         <label for="exampleInputNombre">NOMBRE</label>
+                        <br>
                         <input type="text" class="form-control-sm back" id="exampleInputNombre" aria-describedby="emailHelp"
                             placeholder="Nombre">
                     </div>
                     <div class="text form-group">
                         <label for="exampleInputEmail">CORREO</label>
+                        <br>
                         <input type="email" class="form-control-sm back" id="exampleInputEmail" placeholder="Email">
                     </div>
                     <div class="text form-group">
                         <label for="exampleInputAsunto">ASUNTO</label>
+                        <br>
                         <input type="text" class="form-control-sm back" id="exampleInputAsunto" placeholder="Asunto">
                     </div>
                     <div class="text form-group-sm">
                         <label for="exampleFormControlMensaje">MENSAJE</label>
+                        <br>
                         <textarea class="form-control-sm back" id="exampleFormControlAsunto" rows="3"></textarea>
                     </div>
                     <a class="text" href="">ENVIAR</a>
@@ -59,7 +63,11 @@
 <div class="section seccion-oficinas">
     <div class="container-fluid">
         <div class="row">
-            <h1 class="text">{{pais_name}}</h1>
+            <div class="col-12">
+                <div class="office-title">
+                    <img src="{{pais_image}}" alt="">
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-12">

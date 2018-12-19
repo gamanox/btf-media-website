@@ -35,7 +35,7 @@
 		{
 			pais_name: 'ESP',
 			$pais_image_type: 'image',
-			pais_image: '',
+			pais_image: '/remote/direct_uploads/1545259435_oficina-espana.svg',
 			$pais_arrow_type: 'image',
 			pais_arrow: '/remote/direct_uploads/1539198278_flecha-esp.svg',
 			$oficinas_min: 1,
@@ -68,7 +68,7 @@
 		{
 			pais_name: 'MEX',
 			$pais_image_type: 'image',
-			pais_image: '',
+			pais_image: '/remote/direct_uploads/1545259393_oficina-mexico.svg',
 			$pais_arrow_type: 'image',
 			pais_arrow: '/remote/direct_uploads/1539198281_flecha-mex.svg',
 			$oficinas_min: 1,
@@ -101,7 +101,7 @@
 		{
 			pais_name: 'ARG',
 			$pais_image_type: 'image',
-			pais_image: '',
+			pais_image: '/remote/direct_uploads/1545259479_oficina-argentina.svg',
 			$pais_arrow_type: 'image',
 			pais_arrow: '/remote/direct_uploads/1539198375_flecha-arg.svg',
 			$oficinas_min: 1,

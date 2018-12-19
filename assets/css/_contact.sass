@@ -1,6 +1,20 @@
 #contact-section
+
+    .clients-title
+        padding-bottom: 80px
+    input.form-control-sm, textarea
+        border: 0.75px white solid
+        border-radius: 0
+        height: 36px
+        width: 100%
+        color: white
+    textarea
+        height: 100px
     .text
         color: #fff
+        label
+            font-size: 17px
+            +calibri
 
     .back
         background-color: #000000
@@ -21,18 +35,35 @@
             display: block
             width: 200px
             height: auto
+            left: 50%
+            top: 50%
             &.pais-cont-0
-                left: 248px
-                top: 268px
+                transform: translate(-268%,-171%)
             &.pais-cont-3
-                left: 722px
-                top: 616px
+                // left: 46%
+                // top: 60%
+                transform: translate(-31%,76%)
+
+                .pais_arrow
+                    left: -68px
+                    bottom: 49px
+                    // bottom: auto
+                    // top: 0
             &.pais-cont-2
-                left: 248px
-                top: 512px
+                // left: 18%
+                // top: 49%
+                transform: translate(-268%,-3%)
+
+                .pais_arrow
+                    bottom: auto
+                    top: 18px
+                    right: -28px
             &.pais-cont-1
-                left: 722px
-                top: 225px
+                // left: 46%
+                // top: 21%
+                transform: translate(-31%,-132%)
+                .pais_arrow
+                    right: 79px
             .t_pais
                 +salvo
                 font-size: 24px
@@ -45,13 +76,16 @@
             right: 0
 
 .seccion-oficinas
+    .office-title
+        text-align: center
+        padding-bottom: 60px
     .carousel
         margin: 0 auto
-        width: 500px
-        height: 350px
+        width: 600px
+        height: 450px
         display: relative
     .carousel img
-        width: 500px
-        height: 350px
+        width: auto
+        height: 100%
         display: hidden
         cursor: pointer
