@@ -138,3 +138,22 @@ a:hover
     display: none
     &.active
       display: block
+
+#fullpage
+  .fullpage-wrapper
+    width: 100% !important
+    transform: none !important
+
+  .fp-section
+    width: 100% !important
+    position: absolute !important
+    left: 0 !important
+    top: 0 !important
+    visibility: hidden !important
+    opacity: 0 !important
+    z-index: 0 !important
+    transition: all .7s ease-in-out
+    &.active
+      visibility: visible !important
+      opacity: 1 !important
+      z-index: 1 !important
