@@ -1,5 +1,5 @@
 <div class="section" id="proyecto-backstage">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="titulo col-12">
                 {{!-- <img src="/assets/img/proyecto/h1_backstage.jpg" alt=""> --}}
@@ -15,16 +15,22 @@
             </div>
         </div>
         <h2 class="text d-flex justify-content-center">TAGS:</h2>
-        <div class="row text tags">
-            {{#each tags}}
-            <div class="text col-1">{{nombre_del_tag}} -</div>
-            {{/each}}
+        <div class="row text ">
+            <div class="tags ">
+                {{#each tags}}
+                <p class="">
+                    {{nombre_del_tag}} -
+                </p>
+                {{/each}}
+            </div>
+
         </div>
         <!-- <div class="row">
         </div> -->
     </div>
     <div class="pie-de-pagina">
-        <p class="text1">DOLORES, LA JENN QUE YO CONOCÍ</p>
+        <p class="text1">SU NOMBRE ERA DOLORES, LA JENN QUE YO CONOCÍ</p>
         <p class="text2">SIGUIENTE PROYECTO</p>
+        <p class="text2"><a href="/proyecto/dolores"><img src="/assets/img/next-project.svg" alt=""></a></p>
     </div>
 </div>

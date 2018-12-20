@@ -1,17 +1,39 @@
 <div class="section" id="proyecto-sinopsis">
-  <div class="container-fluid">
-      <div class="row">
-        <div class="col-6">
-            <img class="imagen-sinopsis" src="{{imagen_sinopsis}}">
-        </div>
-        <div class="sinopsis col-6">
-            <div class="titulo">
-                <img class="h1-sinopsis" src="/assets/img/proyecto/h1_sinopsis.jpg" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                {{#each galeria_sinopsis}}
+                {{#if @first}}
+                <img class="imagen-sinopsis" src="{{imagen_sinopsis}}">
+                {{/if}}
+                {{/each}}
             </div>
-            <div class="texto">
-                <p>{{texto_sinopsis}}</p>
+            <div class="sinopsis col-6">
+                <div class="titulo">
+                    <img class="h1-sinopsis" src="/assets/img/title-sinopsis.svg" alt="">
+                </div>
+                <div class="texto t_sinopsis">
+                    <p>{{texto_sinopsis}}</p>
+                </div>
+                <div class="row">
+                    <div class="texto_cast directores col-4">
+                        <p class="cast-title">{{texto_directores}}:</p>
+                        <p>
+                            {{#each directores}}
+                            {{nombre}} <br>
+                            {{/each}}
+                        </p>
+                    </div>
+                    <div class="texto_cast actores col-8">
+                        <p class="cast-title">{{texto_actores}}:</p>
+                        <p>
+                            {{#each actores}}
+                            {{nombre}} <br>
+                            {{/each}}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
     </div>
 </div>

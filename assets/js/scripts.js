@@ -21,6 +21,7 @@ $(document).ready(function() {
       console.log("api");
     }, 17500);
   } else if (proyectoPage) {
+    $("#social").hide();
     setTimeout(toggleMute("video-fullscreen"), 500);
   }
 
@@ -43,9 +44,18 @@ $(document).ready(function() {
       $(".info-anim").removeClass("active");
     },
     afterLoad: function(index, nextIndex) {
+      console.log(index);
+      console.log(nextIndex);
       var currentSlide = nextIndex.anchor;
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
+      if (proyectoPage) {
+        if (nextIndex.isLast) {
+          $("#imdb a").css("color", "black");
+        } else {
+          $("#imdb a").css("color", "white");
+        }
+      }
     }
     // fadingEffect: "slides"
   });

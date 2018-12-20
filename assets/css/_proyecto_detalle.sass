@@ -1,18 +1,16 @@
 #proyecto-detalle
-    .container-fluid
-        padding: 0 255px
-        margin: 10px 0
-        // height: 100%
-        position: relative
+    .container
 
+        max-height: 80%
     #proyecto-titulo
         background-position: 0 0
         background-size: contain
         background-repeat: no-repeat
-        .fp-tableCell
+        .fp-tableCell:first-child
             vertical-align: top
-        .cont-info
-            text-align: justify
+
+
+
         #video-fullscreen
             position: relative
             min-width: 100%
@@ -31,6 +29,12 @@
             text-transform: uppercase
             +salvo
             font-weight: bold
+            p
+                white-space: nowrap
+                width: 100%
+                img
+                    position: relative
+                    display: inline-block
             span
                 display: inline-block
                 +calibri
@@ -49,75 +53,134 @@
             padding-top: 80px
             font-size: 30px
             padding-bottom: 40px
+            text-transform: uppercase
 
 
 
 
     #proyecto-sinopsis
         .imagen-sinopsis
-            width: 100%
-            height: auto
-            padding: 82px
+            width: auto
+            height: 80%
+            padding: 0 20px 0 20px
         .sinopsis
             width: 100%
             height: auto
-            padding-top: 84px
 
             .titulo
                 position: relative
                 .h1-sinopsis
                 text-align: right
             .texto
-                position: relative
-                text-align: justify
-                white-space: pre-line
-                font-size: 20px
-                color: #fff
+
+                p
+                    +calibri
+                    font-weight: normal
+                    position: relative
+                    text-align: justify
+                    white-space: pre-line
+                    font-size: 20px
+                    color: #fff
+                    padding-bottom: 20px
+                    margin-bottom: 0
+                    padding-top: 20px
+                    line-height: normal
+            .texto_cast
+                .cast-title
+
+                    margin: 0
+                    padding: 0
+                    padding-bottom: 10px
+                    padding-top: 20px
+                    +calibri
+                    font-weight: bold
+                    font-size: 18px
+                    text-transform: uppercase
+                    line-height: normal
+            .texto_cast.actores p
+                +calibri
+                font-weight: normal
+                line-height: normal
+                font-size: 18px
+                column-count: 2
+                span
+                    width: 100%
+                    display: block
 
 
     #proyecto-trailer
         .titulo
             position: relative
             text-align: right
-        .trailer
+            padding-bottom: 40px
+        .video
+            width: 90%
+            margin-left: auto
+            margin-right: auto
+            background-color: #4f4f4f
 
     #proyecto-backstage
-        .container-fluid
+
+        .titulo
             position: relative
-            height: 100%
-            .titulo
-                position: relative
-                text-align: right
-            .galeria
-                position: relative
-                width: auto
-                height:
-            .text
-                color: #fff
-                .carousel
-                    margin: 0 auto
-                    width: 800px
-                    height: 300px
-                    display: relative
-                .carousel img
-                    display: hidden
-                    cursor: pointer
-                .tags
+            text-align: right
+        .galeria
+            position: relative
+            width: auto
+            height:
+        .text
+            color: #fff
+
+            &h2
+                +salvo
+                font-weight: bold
+            .carousel
+                margin: 0 auto
+                width: 800px
+                height: 300px
+                display: relative
+            .carousel img
+                display: hidden
+                cursor: pointer
+            .tags
+                width: 100%
+                text-align: center
+                p
+                    +calibri
+                    font-size: 20px
+                    font-weight: normal
+                    white-space: nowrap
+                    display: inline-block
+
         .pie-de-pagina
             position: absolute
             bottom: 0
-            height: 232px
+            height: 180px
             width: 100%
             background-color: #fff
 
             justify-content: center
             align-items: center
             .text1
+                +salvo
+                padding: 0
+                padding-top: 50px
                 font-size: 30px
-                font-weight: 600
+                font-weight: bold
+                margin: 0
                 color: #000
                 text-align: center
+                line-height: normal
             .text2
+                +calibri
+                font-weight: normal
+                line-height: normal
+                padding: 0
+                margin: 0
+                padding-top: 10px
                 font-size: 20px
                 color: #000
                 text-align: center
+                a
+                    display: inline-block
+                    padding-left: 150px
