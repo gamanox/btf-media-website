@@ -1,3 +1,5 @@
+var introSection = document.getElementById("intro-section");
+
 function toggleMute() {
   var video = document.getElementById("homepage-video");
   if (video.muted) {
@@ -11,13 +13,14 @@ function toggleMute() {
 }
 
 $(document).ready(function() {
-  setTimeout(toggleMute, 500);
-  setTimeout(function() {
-    fullpage_api.moveSectionDown();
-    console.log("api");
-  }, 17500);
+  if (introSection) {
+    setTimeout(toggleMute, 500);
+    setTimeout(function() {
+      fullpage_api.moveSectionDown();
+      console.log("api");
+    }, 17500);
+  }
 
-  $(".drag").draggable();
   new fullpage("#fullpage", {
     //options here
     autoScrolling: true,

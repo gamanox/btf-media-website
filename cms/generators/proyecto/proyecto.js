@@ -1,25 +1,61 @@
 {
 	titulo_proyecto: '',
+	tagline_proyecto: '',
 	tipo_de_proyecto: '',
 	$logo_proyecto_type: 'image',
 	logo_proyecto: '',
+	imdb: '',
 	$imagen_homepage_type: 'image',
 	imagen_homepage: '',
 	$descripcion_corta_proyecto_type: 'textarea',
 	descripcion_corta_proyecto: '',
 	$video_fullscreen_type: 'file',
 	video_fullscreen: '',
-	genero_del_proyecto: '',
-	año: '',
-	temporadas: '',
-	episodios: '',
-	nombre_del_cliente: '',
-	$logotipo_del_cliente_type: 'image',
-	logotipo_del_cliente: '',
-	$imagen_sinopsis_type: 'image',
-	imagen_sinopsis: '',
+	genero: {
+		nombre: 'genero',
+		texto: ''
+	},
+	formato: {
+		nombre: 'formato',
+		texto: ''
+	},
+	idioma: {
+		nombre: 'idioma',
+		texto: ''
+	},
+	episodios: {
+		nombre: 'episodios',
+		texto: ''
+	},
+	cliente: {
+		nombre: 'cliente',
+		texto: '',
+		$logotipo_del_cliente_type: 'image',
+		logotipo_del_cliente: ''
+	},
+
+	galeria_sinopsis: [
+		{
+			$imagen_sinopsis_type: 'image',
+			imagen_sinopsis: '',
+			texto_imagen: ''
+		}
+	],
+
 	$texto_sinopsis_type: 'textarea',
 	texto_sinopsis: '',
+	texto_directores: '',
+	directores: [
+		{
+			nombre: ''
+		}
+	],
+	texto_actores: '',
+	actores: [
+		{
+			nombre: ''
+		}
+	],
 	trailer_url: '',
 	ver_proyecto_texto: '',
 	imagenes_backstage: [
