@@ -3,7 +3,14 @@
 	crew: [
 		{
 			nombre: 'Francisco Cordero',
-			titulo: '+ founder & ceo global',
+			titulo: [
+				{
+					renglon: '+ founder'
+				},
+				{
+					renglon: '& ceo global'
+				}
+			],
 			correo: '',
 			$foto_type: 'image',
 			foto: '/remote/direct_uploads/1545231694_Francisco.jpg',
@@ -12,7 +19,14 @@
 		},
 		{
 			nombre: 'Oriol Uría',
-			titulo: 'productor ejecutivo',
+			titulo: [
+				{
+					renglon: '+ co founder spain'
+				},
+				{
+					renglon: '& ceo spain'
+				}
+			],
 			correo: '',
 			$foto_type: 'image',
 			foto: '/remote/direct_uploads/1537909589_uria-crew.jpg',
@@ -21,7 +35,14 @@
 		},
 		{
 			nombre: 'Mariano Carranco',
-			titulo: 'productor',
+			titulo: [
+				{
+					renglon: '+ ceo mexico'
+				},
+				{
+					renglon: '& cpo global'
+				}
+			],
 			correo: 'mariano@btfmedia.com',
 			$foto_type: 'image',
 			foto: '/remote/direct_uploads/1537909572_carranco-crew.jpg',
@@ -30,7 +51,14 @@
 		},
 		{
 			nombre: 'Alejandro Aimetta',
-			titulo: 'showrunner',
+			titulo: [
+				{
+					renglon: '+ co founder argentina'
+				},
+				{
+					renglon: '& cco global'
+				}
+			],
 			correo: 'alejandro@btfmedia.com',
 			$foto_type: 'image',
 			foto: '/remote/direct_uploads/1537909566_aimetta-crew.jpg',

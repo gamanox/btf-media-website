@@ -8,7 +8,9 @@
             <div class="col-3 text">
                 <img src="{{foto}}" alt="">
                 <p class="nombre">{{nombre}}</p>
-                <p class="titulo">{{titulo}}</p>
+                {{#each titulo}}
+                <p class="titulo {{#if @last}}last{{/if}}">{{renglon}}</p>
+                {{/each}}
                 <p class="mail">{{correo}}</p>
             </div>
             {{/each}}
