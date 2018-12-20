@@ -12,7 +12,7 @@
 	$video_fullscreen_type: 'file',
 	video_fullscreen: '',
 	genero: {
-		nombre: 'genero',
+		nombre: 'género',
 		texto: ''
 	},
 	formato: {
@@ -44,20 +44,20 @@
 
 	$texto_sinopsis_type: 'textarea',
 	texto_sinopsis: '',
-	texto_directores: '',
+	texto_directores: 'directores',
 	directores: [
 		{
 			nombre: ''
 		}
 	],
-	texto_actores: '',
+	texto_actores: 'cast principal',
 	actores: [
 		{
 			nombre: ''
 		}
 	],
 	trailer_url: '',
-	ver_proyecto_texto: '',
+	ver_proyecto_texto: 'ver proyecto',
 	imagenes_backstage: [
 		{
 			$imagen_type: 'image',
