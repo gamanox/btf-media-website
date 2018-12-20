@@ -1,6 +1,6 @@
 /_src/*
 /assets/vendor
-# /node_modules
+/node_modules
 /assets/css/sprites
 /_generated/*
 enduro_secret.json
