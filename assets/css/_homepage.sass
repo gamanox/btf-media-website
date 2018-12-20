@@ -1,6 +1,15 @@
 #intro-section
   position: relative
-  .section
+
+  .logo
+    text-align: center
+
+    img
+      width: 287px
+      height: 287px
+#fullpage
+
+  .section.home
     &:before
       content: ""
       width: 100%
@@ -13,20 +22,12 @@
       overflow: hidden
       visibility: hidden
       transition: transform 1.5s
-      transform: translate(0%, 0%)
+      transform: translate(0%, 30%)
 
     &.active
       &:before
         visibility: visible
         transform: translate(0%, -100%)
-  .logo
-    text-align: center
-
-    img
-      width: 287px
-      height: 287px
-#fullpage
-
 
 
   .proyecto

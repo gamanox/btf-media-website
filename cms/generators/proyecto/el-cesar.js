@@ -130,7 +130,7 @@
 		}
 	],
 	trailer_url: '',
-	ver_proyecto_texto: '',
+	ver_proyecto_texto: 'ver proyecto',
 	imagenes_backstage: [
 		{
 			$imagen_type: 'image',

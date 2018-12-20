@@ -1,24 +1,29 @@
-<div class="section" id="proyecto-titulo" >
-        <video id="video-fullscreen" height="auto" width="100%" controls loop>
-            <source src="{{video_fullscreen}}" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
+<div class="section" id="proyecto-titulo">
+    <video id="video-fullscreen" height="auto" width="100%" constrols autoplay preload="auto">
+        <source src="{{video_fullscreen}}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
     <div class="container-fluid">
-            <h1 class="text1 d-flex justify-content-center" >{{titulo_proyecto}}</h1>
-        <div class="row contenedor">
-            <div class="text2 col-3">
-                <p>{{tipo_de_proyecto}} / BIOGRAPHY</p>
+        <h1 class="text1 d-flex justify-content-center">{{titulo_proyecto}}</h1>
+        <div class="row ">
+            <div class="col-12 d-inline-flex justify-content-around cont-info">
+                <div class="text2 invert pr-2">
+                    <p><span class="pr-1">{{genero.nombre}}: </span>{{genero.texto}}</p>
+                </div>
+                <div class="text2  pr-2">
+                    <p><span class="pr-1">{{formato.nombre}} </span>: {{formato.texto}}</p>
+                </div>
+                <div class="text2 invert pr-2">
+                    <p><span class="pr-1">{{idioma.nombre}}: </span>{{idioma.texto}}</p>
+                </div>
+                <div class="text2 pr-2">
+                    <p><span class="pr-1">{{episodios.nombre}} </span>: {{episodios.texto}}</p>
+                </div>
+                <div class="text2">
+                    <p><span class="pr-1">{{cliente.nombre}} </span>: <img src="{{cliente.logotipo_del_cliente}}" alt=""></p>
+                </div>
             </div>
-            <div class="text2 col-3">
-                <p>YEAR: {{año}}</p>
-            </div>
-            <div class="text2 col-3">
-                <p>SEASON: {{temporadas}}  EPISODES:{{episodios}}</p>
-            </div>
-            <div class="text2 col-auto">
-                <p>CLIENT:</p>
-                <img src="{{logotipo_del_cliente}}" alt="">
-            </div>
+
         </div>
     </div>
 </div>

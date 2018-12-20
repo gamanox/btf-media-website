@@ -9,28 +9,49 @@
         background-position: 0 0
         background-size: contain
         background-repeat: no-repeat
+        .fp-tableCell
+            vertical-align: top
+        .cont-info
+            text-align: justify
         #video-fullscreen
-            position: absolute
+            position: relative
             min-width: 100%
+            height: 60%
             top: 0
             z-index: 4
         .container-fluid
-            padding-top: 31%
             color: #fff
             .contenedor
                 position: relative
                 width: 100%
                 display: flex
-                .text2
-                    position: relative
-                    display: flex
-                    justify-content: center
-                    align-content: center
-                    font-size: 20px
+        .text2
+            font-size: 20px
+
+            text-transform: uppercase
+            +salvo
+            font-weight: bold
+            span
+                display: inline-block
+                +calibri
+                font-weight: normal
+                font-size: 20px
+            &.invert
+                +calibri
+                font-weight: normal
+                span
+                    +salvo
+                    font-weight: bold
+
         .text1
+            +salvo
+            font-weight: bold
+            padding-top: 80px
             font-size: 30px
-        
-        
+            padding-bottom: 40px
+
+
+
 
     #proyecto-sinopsis
         .imagen-sinopsis
@@ -70,7 +91,7 @@
             .galeria
                 position: relative
                 width: auto
-                height: 
+                height:
             .text
                 color: #fff
                 .carousel
@@ -88,7 +109,7 @@
             height: 232px
             width: 100%
             background-color: #fff
-            
+
             justify-content: center
             align-items: center
             .text1
@@ -100,4 +121,3 @@
                 font-size: 20px
                 color: #000
                 text-align: center
-        

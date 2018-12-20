@@ -1,7 +1,8 @@
 var introSection = document.getElementById("intro-section");
+var proyectoPage = document.getElementById("proyecto-titulo");
 
-function toggleMute() {
-  var video = document.getElementById("homepage-video");
+function toggleMute(video) {
+  var video = document.getElementById(video);
   if (video.muted) {
     video.muted = false;
   } else {
@@ -14,11 +15,13 @@ function toggleMute() {
 
 $(document).ready(function() {
   if (introSection) {
-    setTimeout(toggleMute, 500);
+    setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
       fullpage_api.moveSectionDown();
       console.log("api");
     }, 17500);
+  } else if (proyectoPage) {
+    setTimeout(toggleMute("video-fullscreen"), 500);
   }
 
   new fullpage("#fullpage", {
