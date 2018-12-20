@@ -148,59 +148,59 @@
 	],
 	tags: [
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Dirección',
 			$nombre_del_tag_en: 'Direction'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Desarrollo',
 			$nombre_del_tag_en: 'Develop'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Guión',
 			$nombre_del_tag_en: 'Script'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Cinematografía',
 			$nombre_del_tag_en: 'Cinematography'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Producción',
 			$nombre_del_tag_en: 'Production'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Música',
 			$nombre_del_tag_en: 'Music'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Casting',
 			$nombre_del_tag_en: 'Casting'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Edición',
 			$nombre_del_tag_en: 'Editing'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Diseño de vestuario',
 			$nombre_del_tag_en: 'Costume Design'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Arte',
 			$nombre_del_tag_en: 'Art'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Maquillaje',
 			$nombre_del_tag_en: 'Makeup'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Fotografía',
 			$nombre_del_tag_en: 'Photography'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Animación',
 			$nombre_del_tag_en: 'Animation'
 		},
 		{
-			nombre_del_tag: '',
+			nombre_del_tag: 'Identificación de la marca',
 			$nombre_del_tag_en: 'Brand Id'
 		}
 	],
