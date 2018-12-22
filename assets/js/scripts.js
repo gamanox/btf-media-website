@@ -10,7 +10,6 @@ function toggleMute(video) {
 
     video.pause();
     video.play();
-    console.log("mute");
   }
 }
 
@@ -19,14 +18,12 @@ $(document).ready(function() {
     setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
       fullpage_api.moveSectionDown();
-      console.log("api");
     }, 17500);
   } else if (proyectoPage) {
     var pathName = window.location.pathname;
     var nextProj = $('#proyecto-backstage').data('id')+1;
     var pageCount = $('#proyecto-backstage').data('id');
     var allProjectsCount = $('.pie-de-pagina').length;
-    console.log('count '+nextProj);
     $('.pie-de-pagina').removeClass('active');
     if(pageCount < allProjectsCount) {
     $('#proyecto-'+nextProj).addClass('active');
@@ -54,8 +51,6 @@ $(document).ready(function() {
       $(".info-anim").removeClass("active");
     },
     afterLoad: function(index, nextIndex) {
-      console.log(index);
-      console.log(nextIndex);
       var currentSlide = nextIndex.anchor;
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
@@ -71,7 +66,6 @@ $(document).ready(function() {
   });
   // fullpage_api.setAllowScrolling(true);
   $(".menu_btn_white").on("click", function(event) {
-
     event.preventDefault();
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
@@ -86,6 +80,20 @@ $(document).ready(function() {
     $("#buttons").toggleClass("active");
     $("#politicas").toggleClass("active");
   });
+  var pathLng = window.location.pathname;
+  var res = pathLng.split("/");
+  var currentLang = res[1];
+  
+  console.log(currentLang);
+  if(currentLang == "en") {
+    $('.lang').removeClass('active');
+    $('.lang.'+currentLang).addClass('active');
+  } else {
+    $('.lang').removeClass('active');
+    $('.lang.es').addClass('active');
+  }
+    $(".en").on("click", function(event) {
+  })
   $(".carousel").waterwheelCarousel();
   // $('.carousel').each(function (index, element) {
 
