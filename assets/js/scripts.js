@@ -8,6 +8,7 @@ function toggleMute(video) {
   } else {
     video.muted = true;
 
+    // video.pause();
     video.play();
     console.log("mute");
   }
@@ -22,12 +23,13 @@ $(document).ready(function() {
     }, 17500);
   } else if (proyectoPage) {
     var pathName = window.location.pathname;
-    var pageId = $('#proyecto-backstage').data('id')+1;
+    var nextProj = $('#proyecto-backstage').data('id')+1;
+    var pageCount = $('#proyecto-backstage').data('id');
     var allProjectsCount = $('.pie-de-pagina').length;
-    console.log('count '+pageId);
+    console.log('count '+nextProj);
     $('.pie-de-pagina').removeClass('active');
-    if(pageId < allProjectsCount) {
-    $('#proyecto-'+pageId).addClass('active');
+    if(pageCount < allProjectsCount) {
+    $('#proyecto-'+nextProj).addClass('active');
     }
     $("#social").hide();
     setTimeout(toggleMute("video-fullscreen"), 500);
