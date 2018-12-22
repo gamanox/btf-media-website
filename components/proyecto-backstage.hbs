@@ -1,4 +1,4 @@
-<div class="section" id="proyecto-backstage">
+<div class="section" id="proyecto-backstage" data-id="{{id}}">
     <div class="container">
         <div class="row">
             <div class="titulo col-12">
@@ -22,15 +22,23 @@
                     {{nombre_del_tag}} -
                 </p>
                 {{/each}}
+                
             </div>
 
         </div>
         <!-- <div class="row">
         </div> -->
     </div>
-    <div class="pie-de-pagina">
-        <p class="text1">SU NOMBRE ERA DOLORES, LA JENN QUE YO CONOCÍ</p>
+   
+    {{#proyecto}}
+    {{#each this}}
+       
+    
+    <div class="pie-de-pagina" id="proyecto-{{proyecto_entry.id}}">
+        <p class="text1">{{proyecto_entry.titulo_proyecto}}</p>
         <p class="text2">SIGUIENTE PROYECTO</p>
-        <p class="text2"><a href="/proyecto/dolores"><img src="/assets/img/next-project.svg" alt=""></a></p>
+        <p class="text2"><a id="next-proj" href="/proyecto/Proyecto-{{proyecto_entry.id}}"><img src="/assets/img/next-project.svg" alt=""></a></p>
     </div>
+    {{/each}}
+    {{/proyecto}}
 </div>

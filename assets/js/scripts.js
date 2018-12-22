@@ -21,6 +21,14 @@ $(document).ready(function() {
       console.log("api");
     }, 17500);
   } else if (proyectoPage) {
+    var pathName = window.location.pathname;
+    var pageId = $('#proyecto-backstage').data('id')+1;
+    var allProjectsCount = $('.pie-de-pagina').length;
+    console.log('count '+pageId);
+    $('.pie-de-pagina').removeClass('active');
+    if(pageId < allProjectsCount) {
+    $('#proyecto-'+pageId).addClass('active');
+    }
     $("#social").hide();
     setTimeout(toggleMute("video-fullscreen"), 500);
   }

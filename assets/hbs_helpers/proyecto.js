@@ -46,3 +46,12 @@ enduro.templating_engine.registerHelper("proyecto", function(options) {
       return options.fn(proyecto_entries);
     });
 });
+
+
+enduro.templating_engine.registerHelper('json', function(context) {
+  return JSON.stringify(context);
+});
+
+enduro.templating_engine.registerHelper('ifEquals', function(arg1, arg2, options) {
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});

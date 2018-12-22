@@ -1,4 +1,5 @@
 ({
+	id: '1',
 	titulo_proyecto: 'El secreto de selena',
 	tagline_proyecto: '',
 	tipo_de_proyecto: 'tv',
