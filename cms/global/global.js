@@ -6,12 +6,12 @@
       link: "https://www.youtube.com/channel/UCEbOobSQSyUtnA21a34O07w"
     },
     {
-      nombre: "instagram",
-      link: "https://www.instagram.com/btfmedia/?hl=en"
-    },
-    {
       nombre: "facebook",
       link: "https://www.facebook.com/btfmediamx/"
+    },
+    {
+      nombre: "instagram",
+      link: "https://www.instagram.com/btfmedia/?hl=en"
     }
   ],
   $música_del_sitio_type: "file",
