@@ -6,9 +6,9 @@ function toggleMute(video) {
   if (video.muted) {
     video.muted = false;
   } else {
-    video.muted = true;
+    video.muted = false;
 
-    // video.pause();
+    video.pause();
     video.play();
     console.log("mute");
   }
@@ -70,8 +70,7 @@ $(document).ready(function() {
     // fadingEffect: "slides"
   });
   // fullpage_api.setAllowScrolling(true);
-  $(".menu_btn_white").on("click", function() {
-    console.log("click");
+  $(".menu_btn_white").on("click", function(event) {
 
     event.preventDefault();
     $(this).toggleClass("active");
@@ -80,8 +79,7 @@ $(document).ready(function() {
     $(".logo_small_white").toggleClass("active");
   });
   //boton politicas de privacidad
-  $(".btn-politicas").on("click", function() {
-    console.log("polit");
+  $(".btn-politicas").on("click", function(event) {
     event.preventDefault();
     $(".btn-politicas").toggleClass("active");
     $(".btn-politicas-back").toggleClass("active");

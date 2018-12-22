@@ -1,7 +1,7 @@
 <div class="section" id="intro-section">
-    <video id="homepage-video" height="auto" width="auto" constrols autoplay preload="auto">
+    <video id="homepage-video" height="auto" width="auto"  autoplay="true"  preload="auto">
         {{#each global.homepage_videos}}
-        <source src="{{video}}" type="video/webm">
+        <source src="{{video}}" type="video/{{container}}">
         {{/each}}
         Your browser does not support the video tag.
     </video>
@@ -34,3 +34,6 @@
 
 {{/proyecto}}
 </div>
+{{!-- <script>
+    document.getElementById('homepage-video').play();
+</script> --}}

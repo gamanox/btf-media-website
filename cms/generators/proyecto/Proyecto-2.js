@@ -134,7 +134,7 @@
       $nombre_en: "Cecilia Suárez"
     }
   ],
-  trailer_url: "https://www.youtube.com/embed/7I7X7ur1WCE",
+  trailer_url: "https://www.youtube.com/embed/7I7X7ur1WCE?autoplay=1",
   ver_proyecto_texto: "ver proyecto",
   imagenes_backstage: [
     {

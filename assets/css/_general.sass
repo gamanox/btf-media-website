@@ -48,16 +48,25 @@ video, .video
       font-weight: normal
       font-size: 16px
       +calibri
+      letter-spacing: 0.1em
 
   ul
     list-style: none
+    margin-bottom: 0
 
-    li a
-      color: #fff
-      opacity: 0.6
-      +calibri
-      font-size: 16px
-      text-transform: uppercase
+    li
+      line-height: normal
+      margin: 0
+      padding: 0
+      padding-bottom: 22px
+      &:last-child
+        padding-bottom: 0 
+      a
+        color: #fff
+        opacity: 0.6
+        +calibri
+        font-size: 16px
+        text-transform: uppercase
   .btn-politicas
     display: none
     &.active
