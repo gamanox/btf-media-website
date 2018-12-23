@@ -18,6 +18,7 @@ $(document).ready(function() {
     setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
       fullpage_api.moveSectionDown();
+      $('.logo_small_white').addClass('active');
     }, 17500);
   } else if (proyectoPage) {
     var pathName = window.location.pathname;
@@ -50,11 +51,19 @@ $(document).ready(function() {
       $("#fullpage").addClass("active");
       $(".info-anim").removeClass("active");
     },
+    
     afterLoad: function(index, nextIndex) {
       var currentSlide = nextIndex.anchor;
+      console.dir(nextIndex);
+      console.dir(index);
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
-      if (proyectoPage) {
+      if(introSection && nextIndex.index>0) {
+        
+          $('#intro-section').remove();
+          fullpage_api.reBuild();
+        
+      } else if (proyectoPage) {
         if (nextIndex.isLast) {
           $("#imdb a").css("color", "black");
         } else {

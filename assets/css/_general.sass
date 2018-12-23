@@ -88,10 +88,12 @@ video, .video
     position: absolute
     left: 0
     top: 40px
-    display: none
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.6s ease-out
     &.active
-      display: block
-
+      opacity: 1
+      visibility: visible
 
     img
       width: 88px
