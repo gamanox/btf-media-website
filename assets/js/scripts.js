@@ -8,7 +8,7 @@ function toggleMute(video) {
   } else {
     video.muted = false;
 
-    video.pause();
+    // video.pause();
     video.play();
   }
 }
@@ -18,19 +18,23 @@ $(document).ready(function() {
     setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
       fullpage_api.moveSectionDown();
-      $('.logo_small_white').addClass('active');
+      $(".logo_small_white").addClass("active");
     }, 17500);
   } else if (proyectoPage) {
+    $(".logo_small_white").addClass("active");
+
     var pathName = window.location.pathname;
-    var nextProj = $('#proyecto-backstage').data('id')+1;
-    var pageCount = $('#proyecto-backstage').data('id');
-    var allProjectsCount = $('.pie-de-pagina').length;
-    $('.pie-de-pagina').removeClass('active');
-    if(pageCount < allProjectsCount) {
-    $('#proyecto-'+nextProj).addClass('active');
+    var nextProj = $("#proyecto-backstage").data("id") + 1;
+    var pageCount = $("#proyecto-backstage").data("id");
+    var allProjectsCount = $(".pie-de-pagina").length;
+    $(".pie-de-pagina").removeClass("active");
+    if (pageCount < allProjectsCount) {
+      $("#proyecto-" + nextProj).addClass("active");
     }
     $("#social").hide();
     setTimeout(toggleMute("video-fullscreen"), 500);
+  } else {
+    $(".logo_small_white").addClass("active");
   }
 
   new fullpage("#fullpage", {
@@ -51,18 +55,16 @@ $(document).ready(function() {
       $("#fullpage").addClass("active");
       $(".info-anim").removeClass("active");
     },
-    
+
     afterLoad: function(index, nextIndex) {
       var currentSlide = nextIndex.anchor;
       console.dir(nextIndex);
       console.dir(index);
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
-      if(introSection && nextIndex.index>0) {
-        
-          $('#intro-section').remove();
-          fullpage_api.reBuild();
-        
+      if (introSection && nextIndex.index > 0) {
+        $("#intro-section").remove();
+        fullpage_api.reBuild();
       } else if (proyectoPage) {
         if (nextIndex.isLast) {
           $("#imdb a").css("color", "black");
@@ -92,17 +94,16 @@ $(document).ready(function() {
   var pathLng = window.location.pathname;
   var res = pathLng.split("/");
   var currentLang = res[1];
-  
+
   console.log(currentLang);
-  if(currentLang == "en") {
-    $('.lang').removeClass('active');
-    $('.lang.'+currentLang).addClass('active');
+  if (currentLang == "en") {
+    $(".lang").removeClass("active");
+    $(".lang." + currentLang).addClass("active");
   } else {
-    $('.lang').removeClass('active');
-    $('.lang.es').addClass('active');
+    $(".lang").removeClass("active");
+    $(".lang.es").addClass("active");
   }
-    $(".en").on("click", function(event) {
-  })
+  $(".en").on("click", function(event) {});
   $(".carousel").waterwheelCarousel();
   // $('.carousel').each(function (index, element) {
 
