@@ -81,7 +81,7 @@ $(document).ready(function() {
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
     $(".btn-politicas").toggleClass("active");
-    $(".logo_small_white").toggleClass("active");
+    // $(".logo_small_white").toggleClass("active");
   });
   //boton politicas de privacidad
   $(".btn-politicas").on("click", function(event) {
