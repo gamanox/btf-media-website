@@ -77,11 +77,19 @@ $(document).ready(function() {
   });
   // fullpage_api.setAllowScrolling(true);
   $(".menu_btn_white").on("click", function(event) {
+    var menuOpen = $(this).hasClass('active');
     event.preventDefault();
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
     $(".btn-politicas").toggleClass("active");
-    // $(".logo_small_white").toggleClass("active");
+    if(menuOpen){
+      console.log(menuOpen);
+      $(".logo_small_white").addClass("active");
+    } else {
+      console.log(menuOpen);
+      $(".logo_small_white").removeClass("active");
+
+    }
   });
   //boton politicas de privacidad
   $(".btn-politicas").on("click", function(event) {
