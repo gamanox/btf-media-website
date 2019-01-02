@@ -4,35 +4,6 @@
 	$paises_min: 1,
 	paises: [
 		{
-			pais_name: 'USA',
-			$pais_image_type: 'image',
-			pais_image: '',
-			$pais_arrow_type: 'image',
-			pais_arrow: '/remote/direct_uploads/1539198273_flecha-usa.svg',
-			$oficinas_min: 1,
-			oficinas: [
-				{
-					direccion: '95 Merrick Way. 3rd Floor. Coral Gables Miami, FL 33134',
-					telefono: '+1 (305) 407 8185'
-				}
-			],
-			$fotos_min: 1,
-			fotos: [
-				{
-					$foto_type: 'image',
-					foto: '/remote/direct_uploads/1539052894_USA1.jpg'
-				},
-				{
-					$foto_type: 'image',
-					foto: '/remote/direct_uploads/1539052902_USA2.jpg'
-				},
-				{
-					$foto_type: 'image',
-					foto: '/remote/direct_uploads/1539052945_USA3.jpeg'
-				}
-			]
-		},
-		{
 			pais_name: 'ESP',
 			$pais_image_type: 'image',
 			pais_image: '/remote/direct_uploads/1545259435_oficina-espana.svg',

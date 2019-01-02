@@ -13,7 +13,7 @@
 			],
 			correo: '',
 			$foto_type: 'image',
-			foto: '/remote/direct_uploads/1545231694_Francisco.jpg',
+			foto: '/remote/direct_uploads/1546461041_francisco.jpg',
 			$resumen_type: 'textarea',
 			resumen: ''
 		},
@@ -29,7 +29,7 @@
 			],
 			correo: '',
 			$foto_type: 'image',
-			foto: '/remote/direct_uploads/1537909589_uria-crew.jpg',
+			foto: '/remote/direct_uploads/1546461046_oriol.jpg',
 			$resumen_type: 'textarea',
 			resumen: ''
 		},
@@ -45,7 +45,7 @@
 			],
 			correo: 'mariano@btfmedia.com',
 			$foto_type: 'image',
-			foto: '/remote/direct_uploads/1537909572_carranco-crew.jpg',
+			foto: '/remote/direct_uploads/1546461050_mariano.jpg',
 			$resumen_type: 'textarea',
 			resumen: 'Do dolore adipisicing est proident dolore quis labore commodo aliqua sunt nisi.'
 		},
@@ -61,7 +61,7 @@
 			],
 			correo: 'alejandro@btfmedia.com',
 			$foto_type: 'image',
-			foto: '/remote/direct_uploads/1537909566_aimetta-crew.jpg',
+			foto: '/remote/direct_uploads/1546461062_alejandro.jpg',
 			$resumen_type: 'textarea',
 			resumen: 'Sunt commodo culpa qui proident esse pariatur deserunt aliqua anim nulla magna pariatur consectetur do.'
 		}
