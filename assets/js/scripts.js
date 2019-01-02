@@ -17,9 +17,14 @@ $(document).ready(function() {
   if (introSection) {
     setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
+      var menuOpen = $(".menu_btn_white").hasClass('active');
       fullpage_api.moveSectionDown();
-      $(".logo_small_white").addClass("active");
-    }, 17500);
+      if (menuOpen) {
+        $(".logo_small_white").removeClass("active");
+      } else {
+        $(".logo_small_white").addClass("active")
+      }  
+      }, 17500);
   } else if (proyectoPage) {
     $(".logo_small_white").addClass("active");
 
@@ -85,17 +90,24 @@ $(document).ready(function() {
     if(menuOpen){
       console.log(menuOpen);
       $(".logo_small_white").addClass("active");
+      $("#menu").removeClass("politicas")
+      $(".btn-politicas").removeClass("active");
+      $(".btn-politicas-back").removeClass("active");
+      $("#social").removeClass("d-none");
+      $("#buttons").removeClass("active");
+      $("#politicas").removeClass("active");
     } else {
       console.log(menuOpen);
       $(".logo_small_white").removeClass("active");
-
     }
   });
   //boton politicas de privacidad
   $(".btn-politicas").on("click", function(event) {
     event.preventDefault();
+    $("#menu").toggleClass("politicas")
     $(".btn-politicas").toggleClass("active");
     $(".btn-politicas-back").toggleClass("active");
+    $("#social").toggleClass("d-none");
     $("#buttons").toggleClass("active");
     $("#politicas").toggleClass("active");
   });
