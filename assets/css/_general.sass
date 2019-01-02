@@ -187,3 +187,29 @@ video, .video
   left: 0
   bottom: 90px
   z-index: 2
+
+#progressbar
+  height: 100%
+  width: 5px
+  // left: 50px
+  position: fixed
+  z-index: 5
+  +vcenter
+  visibility: hidden
+  &.active
+    visibility: visible  
+  .background
+    position: relative
+    background-color: #898989
+    width: 5px
+    height: 50%
+    .bar
+      display: block
+      height: 0
+      width: 5px
+      background-color: #fff
+      position: absolute
+      top: 0
+      left: 0
+      transition: height 0.4s ease-out
+

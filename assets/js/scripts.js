@@ -14,34 +14,6 @@ function toggleMute(video) {
 }
 
 $(document).ready(function() {
-  if (introSection) {
-    setTimeout(toggleMute("homepage-video"), 500);
-    setTimeout(function() {
-      var menuOpen = $(".menu_btn_white").hasClass('active');
-      fullpage_api.moveSectionDown();
-      if (menuOpen) {
-        $(".logo_small_white").removeClass("active");
-      } else {
-        $(".logo_small_white").addClass("active")
-      }  
-      }, 17500);
-  } else if (proyectoPage) {
-    $(".logo_small_white").addClass("active");
-
-    var pathName = window.location.pathname;
-    var nextProj = $("#proyecto-backstage").data("id") + 1;
-    var pageCount = $("#proyecto-backstage").data("id");
-    var allProjectsCount = $(".pie-de-pagina").length;
-    $(".pie-de-pagina").removeClass("active");
-    if (pageCount < allProjectsCount) {
-      $("#proyecto-" + nextProj).addClass("active");
-    }
-    $("#social").hide();
-    setTimeout(toggleMute("video-fullscreen"), 500);
-  } else {
-    $(".logo_small_white").addClass("active");
-  }
-
   new fullpage("#fullpage", {
     //options here
     autoScrolling: true,
@@ -61,25 +33,88 @@ $(document).ready(function() {
       $(".info-anim").removeClass("active");
     },
 
-    afterLoad: function(index, nextIndex) {
-      var currentSlide = nextIndex.anchor;
-      console.dir(nextIndex);
-      console.dir(index);
+    afterLoad: function(origin, destination, direction) {
+      var currentIndex = 0;
+      var currentSlide = destination.anchor;
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
-      if (introSection && nextIndex.index > 0) {
-        $("#intro-section").remove();
-        fullpage_api.reBuild();
-      } else if (proyectoPage) {
-        if (nextIndex.isLast) {
+       if (proyectoPage) {
+        if (destination.isLast) {
           $("#imdb a").css("color", "black");
         } else {
           $("#imdb a").css("color", "white");
+        }
+        console.log(destination);
+
+        var sectionCount = $(".section").length;
+        if (destination.index < sectionCount) {
+          console.dir(destination.index);
+          console.dir(destination);
+
+          var sectionPercent = ((destination.index+1 ) * 100) / sectionCount+'%';
+          console.log(sectionPercent);
+          console.log(sectionCount);
+          $("#progressbar .bar").css({
+            height: sectionPercent
+          });
+          
+        }
+      } else {
+        console.log(destination);
+
+        var sectionCount = $(".section").length;
+        if (destination.index < sectionCount) {
+          console.dir(destination.index);
+          console.dir(destination);
+
+          var sectionPercent = ((destination.index+1) * 100) / sectionCount+'%';
+          console.log(sectionPercent);
+          console.log(sectionCount);
+          $("#progressbar .bar").css({
+            height: sectionPercent
+          });
+          
         }
       }
     }
     // fadingEffect: "slides"
   });
+  if (introSection) {
+    setTimeout(toggleMute("homepage-video"), 500);
+    setTimeout(function() {
+      var menuOpen = $(".menu_btn_white").hasClass('active');
+      fullpage_api.moveSectionDown();
+      
+      if (menuOpen) {
+        $(".logo_small_white, #progressbar").removeClass("active");
+      } else {
+        $(".logo_small_white, #progressbar").addClass("active")
+      }  
+      }, 500);
+      setTimeout(() => {
+        $("#intro-section").remove();
+
+        fullpage_api.reBuild();
+        
+      }, 2000);
+  } else if (proyectoPage) {
+    $(".logo_small_white, #progressbar").addClass("active");
+
+    var pathName = window.location.pathname;
+    var nextProj = $("#proyecto-backstage").data("id") + 1;
+    var pageCount = $("#proyecto-backstage").data("id");
+    var allProjectsCount = $(".pie-de-pagina").length;
+    $(".pie-de-pagina").removeClass("active");
+    if (pageCount < allProjectsCount) {
+      $("#proyecto-" + nextProj).addClass("active");
+    }
+    $("#social").hide();
+    setTimeout(toggleMute("video-fullscreen"), 500);
+  } else {
+    $(".logo_small_white, #progressbar").addClass("active");
+  }
+
+  
   // fullpage_api.setAllowScrolling(true);
   $(".menu_btn_white").on("click", function(event) {
     var menuOpen = $(this).hasClass('active');
@@ -89,7 +124,7 @@ $(document).ready(function() {
     $(".btn-politicas").toggleClass("active");
     if(menuOpen){
       console.log(menuOpen);
-      $(".logo_small_white").addClass("active");
+      $(".logo_small_white, #progressbar").addClass("active");
       $("#menu").removeClass("politicas")
       $(".btn-politicas").removeClass("active");
       $(".btn-politicas-back").removeClass("active");
@@ -98,7 +133,7 @@ $(document).ready(function() {
       $("#politicas").removeClass("active");
     } else {
       console.log(menuOpen);
-      $(".logo_small_white").removeClass("active");
+      $(".logo_small_white, #progressbar").removeClass("active");
     }
   });
   //boton politicas de privacidad
