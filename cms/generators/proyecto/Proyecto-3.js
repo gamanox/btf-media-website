@@ -11,7 +11,7 @@
   imagen_homepage: "/remote/direct_uploads/1545272588_Home_Dolores.jpg",
   $descripcion_corta_proyecto_type: "textarea",
   descripcion_corta_proyecto:
-    "IN A WORLD DOMINATED BY MEN, A TENACIOUS WOMAN WITH AN OUTSPOKEN PERSONALITY MAKES HEADWAY INTO SUCCESS THROUGH THE USE OF DETERMINATION, PERSEVERANCE AND SAVVINESS.",
+    "EN UN TERRENO DOMINADO POR HOMBRES, UNA MUJER DE AVASALLADORA PERSONALIDAD SE ABRE PASO A BASE DE TENACIDAD E INTELIGENCIA.",
   $video_fullscreen_type: "file",
   video_fullscreen: "",
   genero: {
@@ -222,7 +222,7 @@
   $tipo_de_proyecto_en: "tv",
   $imdb_en: "https://www.imdb.com/title/tt6431852/",
   $descripcion_corta_proyecto_en:
-    "IN A WORLD DOMINATED BY MEN, A WOMAN WITH EXTENDED PERSONALITY STARTS SUCCESS THROUGH THE USE OF DETERMINATION, PERSEVERANCE AND SURVEILLANCE.",
+    "IN A LAND DOMINATED BY MEN, A WOMAN OF HIGHLIGHTS PERSONALITY IS OPENED ON A BASIS OF TENACITY AND INTELLIGENCE.",
   $texto_sinopsis_en:
     'The world is surprised at his arrival: while some raise it to the category of Diva, others try to stop his rise. The truth is that her fame is a missile that no one can stop, a luxury that compensates for all previous discontent and its key to become the most important Latin artist of the moment. But, above all, a weapon ready to knock down your ambitions instantly when you can not keep your guard up.\n\n"Dolores" is the story of the perfectly imperfect mother and father of five children, the neighborhood butterfly that one day becomes La Diva de la Banda, the life of the tireless Jenni Rivera.',
   $texto_directores_en: "DIRECTORS",

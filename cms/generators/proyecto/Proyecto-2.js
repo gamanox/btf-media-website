@@ -9,7 +9,7 @@
 	$imagen_homepage_type: 'image',
 	imagen_homepage: '/remote/direct_uploads/1545270788_Home_ElCesar.jpg',
 	$descripcion_corta_proyecto_type: 'textarea',
-	descripcion_corta_proyecto: 'LA CRÓNICA DE UN PAÍS QUE VIO AL ÍDOLO CAER Y A UN HOMBRE LEVANTARSE.',
+	descripcion_corta_proyecto: 'LA CRÓNICA DE UN PAÍS QUE VIO AL ÍDOLO CAER Y A UN HOMBRE LEVANTARSE. SE TRATA DE UNA SERIE BIOGRÁFICA DRAMATIZADA QUE SIGUE LOS PASOS DE LA LEYENDA DE MÉXICO Y DEL BOX MUNDIAL, JULIO CÉSAR CHÁVEZ.',
 	$video_fullscreen_type: 'file',
 	video_fullscreen: '',
 	genero: {
@@ -208,7 +208,7 @@
 	$titulo_proyecto_en: 'The cesar',
 	$tipo_de_proyecto_en: 'tv',
 	$imdb_en: 'https://www.imdb.com/title/tt6749558/',
-	$descripcion_corta_proyecto_en: 'THE CHRONICLE OF A COUNTRY THAT SAW THE IDOL FALL AND A MAN LIFTING UP.',
+	$descripcion_corta_proyecto_en: 'THE CHRONICLE OF A COUNTRY THAT SAW THE IDOL FALL AND A MAN LIFTING UP. IT IS A DRAMATIZED BIOGRAPHIC SERIES THAT FOLLOWS THE STEPS OF THE LEGEND OF MEXICO AND THE WORLD BOX, JULIO CÉSAR CHÁVEZ.',
 	$texto_sinopsis_en: 'For 13 years, 11 months and 14 days, Julio remained unbeaten at the peak of popular fervor and had it all: family, fame, money to hands and legions of followers. However, the top is as high as its fall.\n\nJulio agreed to a privileged world that led him to engage with dangerous drug gangs, to maintain love affairs with famous television stars, to rub shoulders with the highest spheres of Mexican political power and to engage in a whirlwind of addictions that would end his career and, almost, until his life. Rehabilitated and active in boxing, Chávez returns with "El César". An exciting series that follows the stormy life, inside and outside the ring, of the Great Mexican Champion as he travels the difficult path that will turn him into a legend.',
 	$texto_directores_en: 'DIRECTORS',
 	$texto_actores_en: 'MAIN CAST',
