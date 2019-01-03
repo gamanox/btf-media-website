@@ -37,11 +37,11 @@
 		$texto_en: '26'
 	},
 	cliente: {
-		nombre: 'cliente',
+		nombre: 'cliente:',
 		texto: 'disney',
 		$logotipo_del_cliente_type: 'image',
 		logotipo_del_cliente: '/remote/direct_uploads/1545269916_1537907967_disney-client.svg',
-		$nombre_en: 'CLIENT',
+		$nombre_en: 'client:',
 		$texto_en: 'DISNEY (IMG)'
 	},
 	galeria_sinopsis: [
