@@ -38,7 +38,7 @@ $(document).ready(function() {
       var currentSlide = destination.anchor;
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
-       if (proyectoPage) {
+      if (proyectoPage) {
         if (destination.isLast) {
           $("#imdb a").css("color", "black");
         } else {
@@ -51,13 +51,13 @@ $(document).ready(function() {
           console.dir(destination.index);
           console.dir(destination);
 
-          var sectionPercent = ((destination.index+1 ) * 100) / sectionCount+'%';
+          var sectionPercent =
+            ((destination.index + 1) * 100) / sectionCount + "%";
           console.log(sectionPercent);
           console.log(sectionCount);
           $("#progressbar .bar").css({
             height: sectionPercent
           });
-          
         }
       } else {
         console.log(destination);
@@ -67,13 +67,13 @@ $(document).ready(function() {
           console.dir(destination.index);
           console.dir(destination);
 
-          var sectionPercent = ((destination.index+1) * 100) / sectionCount+'%';
+          var sectionPercent =
+            ((destination.index + 1) * 100) / sectionCount + "%";
           console.log(sectionPercent);
           console.log(sectionCount);
           $("#progressbar .bar").css({
             height: sectionPercent
           });
-          
         }
       }
     }
@@ -82,21 +82,20 @@ $(document).ready(function() {
   if (introSection) {
     setTimeout(toggleMute("homepage-video"), 500);
     setTimeout(function() {
-      var menuOpen = $(".menu_btn_white").hasClass('active');
+      var menuOpen = $(".menu_btn_white").hasClass("active");
       fullpage_api.moveSectionDown();
-      
+
       if (menuOpen) {
         $(".logo_small_white, #progressbar").removeClass("active");
       } else {
-        $(".logo_small_white, #progressbar").addClass("active")
-      }  
-      }, 500);
-      setTimeout(() => {
-        $("#intro-section").remove();
+        $(".logo_small_white, #progressbar").addClass("active");
+      }
+    }, 17500);
+    setTimeout(() => {
+      $("#intro-section").remove();
 
-        fullpage_api.reBuild();
-        
-      }, 2000);
+      fullpage_api.reBuild();
+    }, 19000);
   } else if (proyectoPage) {
     $(".logo_small_white, #progressbar").addClass("active");
 
@@ -114,18 +113,17 @@ $(document).ready(function() {
     $(".logo_small_white, #progressbar").addClass("active");
   }
 
-  
   // fullpage_api.setAllowScrolling(true);
   $(".menu_btn_white").on("click", function(event) {
-    var menuOpen = $(this).hasClass('active');
+    var menuOpen = $(this).hasClass("active");
     event.preventDefault();
     $(this).toggleClass("active");
     $("#menu").toggleClass("active");
     $(".btn-politicas").toggleClass("active");
-    if(menuOpen){
+    if (menuOpen) {
       console.log(menuOpen);
       $(".logo_small_white, #progressbar").addClass("active");
-      $("#menu").removeClass("politicas")
+      $("#menu").removeClass("politicas");
       $(".btn-politicas").removeClass("active");
       $(".btn-politicas-back").removeClass("active");
       $("#social").removeClass("d-none");
@@ -139,7 +137,7 @@ $(document).ready(function() {
   //boton politicas de privacidad
   $(".btn-politicas").on("click", function(event) {
     event.preventDefault();
-    $("#menu").toggleClass("politicas")
+    $("#menu").toggleClass("politicas");
     $(".btn-politicas").toggleClass("active");
     $(".btn-politicas-back").toggleClass("active");
     $("#social").toggleClass("d-none");
