@@ -60,7 +60,8 @@
     </div>
 </div>
 {{#each paises}}
-<div class="section seccion-oficinas">
+{{#unless @first}}
+<div class="section seccion-oficinas ">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -80,4 +81,6 @@
         </div>
     </div>
 </div>
+{{/unless}}
+
 {{/each}}

@@ -19,10 +19,12 @@
                 <div class="text2 pr-2">
                     <p><span class="pr-1">{{episodios.nombre}} </span>: {{episodios.texto}}</p>
                 </div>
+                {{#if cliente.logotipo_del_cliente}}
                 <div class="text2">
                     <p><span class="pr-1">{{cliente.nombre}} </span><img src="{{cliente.logotipo_del_cliente}}" alt=""></p>
 
                 </div>
+                {{/if}}
             </div>
 
         </div>
