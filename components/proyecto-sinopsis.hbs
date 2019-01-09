@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col-6">
                 {{#each galeria_sinopsis}}
-                {{#if @first}}
-                <img class="imagen-sinopsis" src="{{imagen_sinopsis}}">
-                {{/if}}
+
+                <img class="imagen-sinopsis cartel-{{@index}}" src="{{imagen_sinopsis}}">
+
                 {{/each}}
             </div>
             <div class="sinopsis col-6">

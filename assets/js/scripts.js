@@ -1,6 +1,9 @@
 var introSection = document.getElementById("intro-section");
 var proyectoPage = document.getElementById("proyecto-titulo");
 
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1));
+}
 function toggleMute(video) {
   var video = document.getElementById(video);
   if (video.muted) {
@@ -39,11 +42,24 @@ $(document).ready(function() {
       $("#fullpage").removeClass("active");
       $(".info-anim").addClass("active");
       if (proyectoPage) {
-        if (destination.isLast) {
-          $("#imdb a").css("color", "black");
-        } else {
+        if (destination.isFirst) {
+          $("#top").css("visibility", "hidden");
+          $("#imdb").css("visibility", "visible");
           $("#imdb a").css("color", "white");
+        } else if (destination.isLast) {
+          $("#imdb").css("visibility", "visible");
+
+          $("#imdb a").css("color", "black");
+          $("#top").css("visibility", "visible");
+          $("#top").css("filter", "invert(100%)");
+        } else {
+          $("#imdb").css("visibility", "visible");
+
+          $("#imdb a").css("color", "white");
+          $("#top").css("visibility", "visible");
+          $("#top").css("filter", "none");
         }
+
         console.log(destination);
 
         var sectionCount = $(".section").length;
@@ -97,6 +113,11 @@ $(document).ready(function() {
       fullpage_api.reBuild();
     }, 19000);
   } else if (proyectoPage) {
+    $("#top").on("click", function(event) {
+      event.preventDefault();
+      console.log("click");
+      fullpage_api.moveTo(1);
+    });
     $(".logo_small_white, #progressbar").addClass("active");
 
     var pathName = window.location.pathname;
@@ -107,6 +128,11 @@ $(document).ready(function() {
     if (pageCount < allProjectsCount) {
       $("#proyecto-" + nextProj).addClass("active");
     }
+    var cartelCount = parseInt($(".imagen-sinopsis").length);
+    var currentCartel = getRandom(0, cartelCount - 1);
+    console.log("cartel " + currentCartel);
+    $(".imagen-sinopsis").removeClass("active");
+    $(".cartel-" + currentCartel).addClass("active");
     $("#social").hide();
     setTimeout(toggleMute("video-fullscreen"), 500);
   } else {

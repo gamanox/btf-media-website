@@ -11,7 +11,7 @@
 	$descripcion_corta_proyecto_type: 'textarea',
 	descripcion_corta_proyecto: 'LA CRÓNICA DE UN PAÍS QUE VIO AL ÍDOLO CAER Y A UN HOMBRE LEVANTARSE. SE TRATA DE UNA SERIE BIOGRÁFICA DRAMATIZADA QUE SIGUE LOS PASOS DE LA LEYENDA DE MÉXICO Y DEL BOX MUNDIAL, JULIO CÉSAR CHÁVEZ.',
 	$video_fullscreen_type: 'file',
-	video_fullscreen: '',
+	video_fullscreen: '/remote/direct_uploads/1547063637_proyectoec.webm',
 	genero: {
 		nombre: 'género',
 		texto: 'biodrama político',
