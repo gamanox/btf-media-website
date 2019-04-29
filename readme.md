@@ -1,3 +1,13 @@
-## Simple blog with enduro.js
+## BTF MEDIA SITE
 
-Check out the guite at: http://www.endurojs.com/blog/how-to-make-a-blog-with-endurojs
+### Instrucciones para development
+
+- npm install enduro -g
+- enduro dev
+
+### Instrucciones para producción
+
+- npm install enduro -g
+- enduro render
+
+Todo se genera en la carpeta /_generated
